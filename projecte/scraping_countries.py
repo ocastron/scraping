@@ -14,7 +14,6 @@ CODING = 'utf-8'
 INIT_DOWNLOAD_LIST = 'Downloading url: '
 ERROR_DOWNLOAD = 'Download error: '
 FINISH_SCRAPING_PROJECT = 'Finish scraping project in: '
-TIME = ' seconds'
 ERROR_EMPTY_HTML = 'Error empty html for '
 INIT_SCRAPING_LIST = 'Init scraping countries list'
 FINISH_SCRAPING_LIST = 'Finish scraping countries list \n'
@@ -54,7 +53,7 @@ def startScraping():
     init = datetime.datetime.now()
     scrapingCountriesList(BASE_URL + COUNTRIES_EXT)
     end = datetime.datetime.now()
-    print FINISH_SCRAPING_PROJECT, end-init, TIME
+    print FINISH_SCRAPING_PROJECT, end-init 
 
 #Funcio per obtenir mitjançant scraping la llista dels paisos d'Africa
 def scrapingCountriesList(url):
